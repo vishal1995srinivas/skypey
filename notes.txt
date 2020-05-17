@@ -1,0 +1,7 @@
+REDUX
+Store contains state object. It is a single source of truth.
+to create a store two paramteters requires. Reducers and initial state.
+Reducers take state are param.
+Store = createStroe(reducers, initialState). Store throws us 3 API's getState().
+From user click-> action -> reducers -> access store and return new state.
+for similar actions of user , create a function name it is as action creators.
