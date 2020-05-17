@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,700");
+* {
+	box-sizing: border-box;
+}
 #root {
 	height: 100vh;
 }
@@ -8,3 +11,5 @@ body {
 	font-weight: 400;
 	font-family: "Nunito Sans", sans-serif;
 }
+
+/* not small devices  */

@@ -5,12 +5,13 @@ import SideBar from './SideBar';
 import Main from './Main';
 import store from './Store';
 import _ from 'lodash';
+import './SideBar.css';
 
-const { contacts } = store.getState();
+const { contact } = store.getState();
 function App() {
 	return (
 		<div className="App">
-			<SideBar contacts={_.values(contacts)} />
+			<SideBar contacts={_.values(contact)} />
 			<Main />
 		</div>
 	);

@@ -1,3 +1,8 @@
-export const reducer = (state, action) => {
-	return state;
-};
+import User from './User';
+import contact from './contacts';
+import { combineReducers } from 'redux';
+
+export default combineReducers({
+	User,
+	contact
+});

@@ -1,8 +1,9 @@
 import React from 'react';
-import './SideBar.css';
 import User from './User';
+import './SideBar.css';
 const SideBar = ({ contacts }) => {
-	return <aside>{contacts.map((contact) => <User user={contact} key={contact.user_id} />)}</aside>;
+	return (
+		<aside className="sidebar">{contacts.map((contact) => <User user={contact} key={contact.user_id} />)}</aside>
+	);
 };
-
 export default SideBar;
