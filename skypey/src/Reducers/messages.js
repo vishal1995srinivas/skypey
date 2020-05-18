@@ -22,7 +22,5 @@ const messages = (state = getMessages(10), action) => {
 		default:
 			return state;
 	}
-
-	return state;
 };
 export default messages;
