@@ -10,10 +10,10 @@ const MessageInput = ({ value }) => {
 		//e.preventDefault();
 		store.dispatch(setTypingValue(e.target.value));
 	};
-	const handleSubmit = (e, value, activeUser) => {
+	const handleSubmit = (e) => {
 		e.preventDefault();
 		const { typing, activeUsersId } = state;
-		store.dispatch(Send(value, activeUser));
+		store.dispatch(Send(typing, activeUsersId));
 	};
 	return (
 		<form className="Message" onSubmit={handleSubmit}>
