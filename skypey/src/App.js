@@ -7,12 +7,12 @@ import store from './Store';
 import _ from 'lodash';
 import './SideBar.css';
 
-const { contact } = store.getState();
+const { contact, User, activeUsersId } = store.getState();
 function App() {
 	return (
 		<div className="App">
 			<SideBar contacts={_.values(contact)} />
-			<Main />
+			<Main user={User} activeUsersId={activeUsersId} />
 		</div>
 	);
 }
