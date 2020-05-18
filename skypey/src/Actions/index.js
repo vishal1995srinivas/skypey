@@ -6,8 +6,3 @@ export const setActiveUserId = (id) => {
 		payload: id
 	};
 };
-
-// export const setActiveUserId = (id) => ({
-// 	type: SET_ACTIVE_USER_ID,
-// 	payload: id
-// });

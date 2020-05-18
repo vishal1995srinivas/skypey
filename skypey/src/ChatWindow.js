@@ -1,6 +1,7 @@
 import React from 'react';
 import store from './Store';
 import Header from './Header';
+import Chats from './Chats';
 //import { activeUsersId } from './Reducers/activeUsersId';
 const ChatWindow = ({ activeUsersId }) => {
 	const state = store.getState();
@@ -9,6 +10,7 @@ const ChatWindow = ({ activeUsersId }) => {
 	return (
 		<div className="ChatWindow">
 			<Header user={activeUser} />
+			<Chats user={activeUsersId} />
 		</div>
 	);
 };
