@@ -8,6 +8,7 @@ import _ from 'lodash';
 import './SideBar.css';
 
 const { contact, User, activeUsersId } = store.getState();
+console.log(store.getState());
 function App() {
 	return (
 		<div className="App">

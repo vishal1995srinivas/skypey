@@ -1,8 +1,8 @@
 import React from 'react';
-import activeUserId from './Reducers/activeUsersId';
+//import { activeUsersId } from './Reducers/activeUsersId';
 
-const ChatWindow = () => {
-	return <div className="ChatWindow"> Converstion for user id : {activeUserId}</div>;
+const ChatWindow = ({ activeUsersId }) => {
+	return <div className="ChatWindow"> Converstion for user id : {activeUsersId}</div>;
 };
 
 export default ChatWindow;

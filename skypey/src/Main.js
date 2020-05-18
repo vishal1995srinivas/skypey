@@ -4,11 +4,13 @@ import store from './Store';
 import Empty from './Empty';
 import ChatWindow from './ChatWindow';
 
-const Main = ({ user, activeUsersId }) => {
-	//console.log(store.getState());
+console.log(store.getState());
+const Main = ({ user }) => {
+	let activeUsersId = store.getState().activeUsersId;
+	//console.log(activeUsersId);
 	const renderMainContent = () => {
 		if (!activeUsersId) {
-			return <Empty user={user} activeUserId={activeUsersId} />;
+			return <Empty user={user} activeUsersId={activeUsersId} />;
 		} else {
 			return <ChatWindow activeUsersId={activeUsersId} />;
 		}
