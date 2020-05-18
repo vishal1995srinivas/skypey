@@ -1,8 +1,8 @@
 import React from 'react';
 import './Main.css';
-import store from './Store';
+import store from '../Store';
 import Empty from './Empty';
-import ChatWindow from './ChatWindow';
+import ChatWindow from '../Containers/ChatWindow';
 
 console.log(store.getState());
 const Main = ({ user }) => {

@@ -1,6 +1,6 @@
 import React from 'react';
-import { setActiveUserId } from './Actions';
-import store from './Store';
+import { setActiveUserId } from '../Actions';
+import store from '../Store';
 
 function handleUserClick({ user_id }) {
 	// console.log(user_id);

@@ -1,7 +1,7 @@
 import React from 'react';
-import store from './Store';
-import Header from './Header';
-import Chats from './Chats';
+import store from '../Store';
+import Header from '../components/Header';
+import Chats from '../components/Chats';
 import _ from 'lodash';
 import MessageInput from './MessageInput';
 //import { activeUsersId } from './Reducers/activeUsersId';

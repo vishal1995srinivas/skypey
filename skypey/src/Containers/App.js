@@ -3,12 +3,12 @@ import logo from './logo.svg';
 import './App.css';
 import SideBar from './SideBar';
 import Main from './Main';
-import store from './Store';
+import store from '../Store';
 import _ from 'lodash';
-import './SideBar.css';
+//import '../components/SideBar.css';
 
 const { contact, User, activeUsersId } = store.getState();
-console.log(store.getState());
+//console.log(store.getState());
 function App() {
 	return (
 		<div className="App">
