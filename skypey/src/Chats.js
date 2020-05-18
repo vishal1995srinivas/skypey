@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 import store from './Store';
 
 //import { activeUsersId } from './Reducers/activeUsersId';
-const Chats = ({ user }) => {
-	const state = store.getState();
-	console.log(state);
-	const messages = state.messages[user];
-	console.log(messages);
-	return <div className="Chats" />;
+const Chat = ({ message }) => {
+	const { text, is_user_msg } = message;
+	return <span className={`Chat ${is_user_msg} ? "is-user-msg": ""}`}>{text}</span>;
 };
+class Chats extends Component {
+	render() {
+		const { messages } = this.props;
+		return (
+			<div className="Chats">{messages.map((message) => <Chat message={message} key={message.number} />)}</div>
+		);
+	}
+}
 
 export default Chats;
