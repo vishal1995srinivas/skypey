@@ -4,7 +4,6 @@ import store from '../Store';
 import Empty from './Empty';
 import ChatWindow from '../Containers/ChatWindow';
 
-console.log(store.getState());
 const Main = ({ user }) => {
 	let activeUsersId = store.getState().activeUsersId;
 	//console.log(activeUsersId);

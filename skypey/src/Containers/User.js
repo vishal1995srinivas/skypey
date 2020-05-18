@@ -1,7 +1,7 @@
 import React from 'react';
 import { setActiveUserId } from '../Actions';
 import store from '../Store';
-
+import './User.css';
 function handleUserClick({ user_id }) {
 	// console.log(user_id);
 	store.dispatch(setActiveUserId(user_id));
