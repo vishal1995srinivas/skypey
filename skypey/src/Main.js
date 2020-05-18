@@ -2,6 +2,7 @@ import React from 'react';
 import './Main.css';
 import store from './Store';
 import Empty from './Empty';
+import ChatWindow from './ChatWindow';
 
 const Main = ({ user, activeUsersId }) => {
 	//console.log(store.getState());
