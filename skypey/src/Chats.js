@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import store from './Store';
+import './Chats.css';
 
 //import { activeUsersId } from './Reducers/activeUsersId';
 const Chat = ({ message }) => {
